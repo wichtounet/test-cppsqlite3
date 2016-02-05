@@ -5,7 +5,7 @@ default: release
 include make-utils/flags.mk
 include make-utils/cpp-utils.mk
 
-CXX_FLAGS += -pthread -pedantic
+CXX_FLAGS += -pthread -pedantic -ICppSQLite
 LD_FLAGS += -lsqlite3
 
 $(eval $(call auto_folder_compile,src))
